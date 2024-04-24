@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #131b2b;
+    color: white;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    
+}
+.section img{
+    justify-content: space-evenly;
+    height: 400px;
+    width:400px;
+    border: 40px;
+    border-color:  solid white;
+
+}
+.section h2{
+    color: greenyellow;
+}
+
+p{
+    font-size: 26px;
+}
+.Information{
+    background-color: whitesmoke;
+    color: black;
+}
