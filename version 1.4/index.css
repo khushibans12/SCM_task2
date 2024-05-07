@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: #131b2b;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    
+    position: fixed;
+    padding: 30px 120px;
+    background-color: transparent;
+    justify-content: space-between;
+    z-index: 1111;
+    transition: 0.5s ease;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo T{
+    color: springgreen;
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style:none;
+    margin-right: 35px;
+}
+ol li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+ol li:hover a{
+    color: greenyellow;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+
+}
+.custom-button {
+    background-color: transparent;
+    color: #fff; /* text-yellow-600 */
+    font-weight: 600; /* font-semibold */
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid: #FFF; /* border border-yellow-600 */
+    border-radius: 0.25rem; /* rounded */
+    display: inline-block; /* inline-block */
+    margin-top: 1.25rem; /* mt-5 */
+    cursor: pointer; /* cursor-pointer */
+   }
+  
+  .custom-button:hover {
+    background-color: white; /* hover:bg-yellow-500 */
+    color: black; /* hover:text-white */
+    border-color: transparent; /* hover:border-transparent */
+  }
+  
+
+.home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0,0,100% 0, 100% 100%,80% 95%,0 100%);
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("https://www.homestratosphere.com/wp-content/uploads/2020/08/types-of-home-gym-equipment-Aug122020-3-min.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+.highlights{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+
+}
+.highlights h3{
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left:6px solid greenyellow;
+}
+.highlights h1{
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights b {
+    color: greenyellow;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.highlights .tagline{
+    color: white;
+    font-size:1.2 vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights .join{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight:800 ;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: greenyellow;
+    border:2px solid greenyellow;
+    border-radius: 50px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.highlights .join:hover{
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background:black;
+    
+}
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    text-align:center;
+    padding-top: 100px ;
+    display: inline-block;
+
+}
+span{
+    color: greenyellow;
+}
+.main h2:before{
+    position: absolute;
+    content:"";
+    background: greenyellow;
+    height: 3px;
+    width: 30%;
+    right:-15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+.main h6{
+    margin-top: 10px;
+    font-size:13px;
+    font-family:sans-serif;
+    font-weight:lighter;
+
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding:0 30px;
+    justify-content: center;
+
+
+}
+.about .content .cols{
+    position:relative;
+    width:100%;
+    height: 100%;
+    padding: 20px 70px;
+
+}
+.about .content .cols p b{
+    font-size: 20px;
+    margin-right: 2px;
+
+}
+.about .content .cols a{
+    position: relative;
+    top:20px;
+    color: greenyellow;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.about .content .cols .box{
+    position: relative;
+    height: 550px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0,5);
+}
+.about .content .cols .box img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.workout .content{
+    flex-wrap: wrap;
+
+}
+.workout .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background: rgb(53, 53, 53);
+    box-shadow: 0 10px 15px rgba(0,0,0,0,5);
+}
+.workout .content  .frame .box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+}
+.workout .content  .frame .box img{
+position: absolute;
+height: 100%;
+width: 100%;
+overflow: hidden;
+    
+}
+.workout .content  .frame .box img{
+    position: absolute;
+    height: 100%;
+width: 100%;
+object-fit: cover;
+filter: brightness(80%);
+transition: 0.2s ease-in;
+
+
+}
+.workout .content  .frame .box:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.workout .content  .frame .title{
+    color: greenyellow;
+    padding :5px 0;
+
+}
+.workout .content .frame p{
+    font-size: 0.8em;
+}
+.diet .content{
+    flex-direction: column;
+}
+.diet .content .row{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+
+
+
+}
+.diet .content .row .cols{
+    position: relative;
+    width: 600px;
+    padding:20px 50px;
+
+}
+.diet .content .row .cols .heading{
+    font-size: 2em;
+    color: orange;
+}
+.diet .content .row .cols .boxes{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding:20px;
+    border-radius: 8px;
+    background: black;
+    box-shadow: 0 10px 15px rgba(0,0,0,0,5);
+}
+
+.diet .content .row .cols .boxes img{
+height: 100%;
+width:100%;
+object-fit: cover;
+}
+.diet .content .row .cols .heading2{
+    font-size: 2em;
+    color: orange;
+}
